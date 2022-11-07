@@ -42,7 +42,7 @@ const DetailSearch = () => {
           src={dataSearch.sprites.front_default}
           class="card-img-top mx-auto"
           alt="..."
-          style={{ width: 200, height: 300, objectFit: "contain" }}
+          style={{ width: 300, height: 300, objectFit: "contain" }}
         />
         <div class="card-body">
           <p class="card-text">Name: {dataSearch.name}</p>
