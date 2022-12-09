@@ -17,7 +17,7 @@ const Details = () => {
     return state.details;
   });
 
-  // console.log(detail, "<<detail");
+  console.log(detail, "<<detail");
 
   const [userData, setUserData] = useState({
     labels: detail.stats.map((el) => el.stat.name),
@@ -59,15 +59,17 @@ const Details = () => {
           <div style={{ width: 700 }}>
             <Bar data={userData} />
           </div>
-          <button
-            onClick={() => {
-              navigate("/");
-            }}
-            type="button"
-            class="btn btn-primary"
-          >
-            Kembali
-          </button>
+          <div className="d-grid mt-3">
+            <button
+              onClick={() => {
+                navigate("/");
+              }}
+              type="button"
+              class="btn btn-primary"
+            >
+              Kembali
+            </button>
+          </div>
         </div>
       </div>
     </div>

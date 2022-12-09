@@ -16,14 +16,14 @@ const ListPokemon = ({ pokemon }) => {
         <h2>Pokemon Not Found</h2>
       ) : (
         <div class="card kartu  h-100">
+          <img
+            src="https://www.microoci.com/wp-content/uploads/2021/07/16145196328904.jpg"
+            alt="pokemon"
+          />
           <div class="card-body">
-            <h5 class="card-title">Name: {pokemon.name}</h5>
-            <div>
-              <button
-                onClick={detail}
-                type="button"
-                class="btn btn-outline-primary"
-              >
+            <h5 class="card-title text-center">Name: {pokemon.name}</h5>
+            <div className="d-grid">
+              <button onClick={detail} type="button" class="btn btn-primary">
                 Detail
               </button>
             </div>

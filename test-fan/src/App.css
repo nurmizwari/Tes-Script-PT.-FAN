@@ -13,6 +13,14 @@
   pointer-events: none;
 }
 
+.footer {
+  width: 100%;
+  height: 7vh;
+  background-color: rgb(10, 139, 244);
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

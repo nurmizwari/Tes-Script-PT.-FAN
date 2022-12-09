@@ -5,6 +5,7 @@ import ListPokemon from "./ListPokemon";
 import { NextPokemon, previousPokemon } from "../store/action/action";
 
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -36,6 +37,7 @@ const HomePage = () => {
   }, []);
 
   let data = pokemons.results;
+  // console.log(data, "<<data");
 
   if (data == undefined) {
     return <h2>Loading</h2>;
@@ -51,7 +53,7 @@ const HomePage = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="container">
         <div className="row">
           <div class=" mb-3 mt-5">
@@ -108,7 +110,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
